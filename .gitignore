@@ -1,0 +1,5 @@
+*.o 
+*.out 
+my_ls 
+my_ls.exe 
+.DS_Store 
