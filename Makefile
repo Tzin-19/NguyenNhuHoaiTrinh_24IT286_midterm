@@ -1,18 +1,17 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Iinclude -std=c99 -D_DEFAULT_SOURCE -D_XOPEN_SOURCE=700
-SRC = src/main.c src/flags.c src/file_info.c src/sort.c src/display.c
-OBJ = $(SRC:.c=.o)
+OBJ = src/main.o src/flags.o src/file_info.o src/sort.o src/display.o
 TARGET = my_ls
 
 all: $(TARGET)
 
 $(TARGET): $(OBJ)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $(OBJ)
 
-src/%.o: src/%.c
+.c.o:
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f src/*.o $(TARGET) $(TARGET).exe
+	rm -f src/*.o $(TARGET)
 
 .PHONY: all clean
