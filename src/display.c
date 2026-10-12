@@ -5,11 +5,11 @@
 #include <time.h>
 #include <sys/types.h>
 
-#if defined(__unix__) || defined(__APPLE__) || defined(__linux__)
+#if defined(__linux__)
 #include <sys/sysmacros.h>
 #endif
 
-// Tự định nghĩa macro major/minor nếu biên dịch trên Windows
+// Tự định nghĩa macro major/minor nếu biên dịch trên môi trường thiếu
 #ifndef major
 #define major(dev) ((int)(((dev) >> 8) & 0xff))
 #endif
