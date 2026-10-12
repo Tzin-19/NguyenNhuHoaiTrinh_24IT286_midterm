@@ -9,7 +9,7 @@ static int compare_files(const void *a, const void *b)
 {
     const FileInfo *fileA = *(const FileInfo **)a;
     const FileInfo *fileB = *(const FileInfo **)b;
-    s int res = 0;
+    int res = 0;
 
     // 1. Sắp xếp theo Kích thước (-S)
     if (current_opts->flag_S)
