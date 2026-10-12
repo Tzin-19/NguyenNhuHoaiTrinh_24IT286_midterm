@@ -3,8 +3,8 @@
 - **Course:** Systems Programming / UNIX Operating Systems (APUE)
 - **Student Name:** Nguyen Nhu Hoai Trinh
 - **Student ID:** 24IT286
-- **Class:** 24IT
-- **Testing Environment:** NetBSD 10.1 (GENERIC) & POSIX.1-2008 / C99
+- **Class:** 24SE2
+- **Testing Environment:** NetBSD 10.1 (GENERIC)
 - **GitHub Repository URL:** [https://github.com/Tzin-19/NguyenNhuHoaiTrinh_24IT286_midterm](https://github.com/Tzin-19/NguyenNhuHoaiTrinh_24IT286_midterm)
 
 ---
